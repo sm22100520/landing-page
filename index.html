@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana | Nature's Premium Superfruit</title>
+    <meta name="description" content="Discover the history, benefits, and stories behind the world's most popular fruit - the banana.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-stone-50 text-stone-900 font-['Outfit']">
+
+    <!-- Navigation -->
+    <nav class="glass-nav px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 text-2xl font-bold tracking-tight">
+                <span class="text-banana-500">🍌</span>
+                <span class="bg-gradient-to-r from-banana-600 to-leaf-700 bg-clip-text text-transparent">Bananify</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-stone-600">
+                <a href="#home" class="hover:text-banana-600 transition-colors">Home</a>
+                <a href="#story" class="hover:text-banana-600 transition-colors">Product Story</a>
+                <a href="#benefits" class="hover:text-banana-600 transition-colors">Benefits</a>
+                <a href="#contact" class="btn-primary py-2 px-5 text-sm">Get in Touch</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-stone-200 flex-col p-6 gap-4 text-center md:hidden">
+            <a href="#home" class="py-2 font-medium">Home</a>
+            <a href="#story" class="py-2 font-medium">Product Story</a>
+            <a href="#benefits" class="py-2 font-medium">Benefits</a>
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[90vh] flex items-center overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <span class="inline-block px-4 py-1.5 bg-banana-100 text-banana-700 rounded-full text-sm font-semibold mb-6">World's #1 Fruit</span>
+                <h1 class="text-6xl md:text-7xl font-bold leading-[1.1] mb-6">
+                    Nature's Perfect <span class="text-banana-500 italic">Energy</span> Bar.
+                </h1>
+                <p class="text-xl text-stone-600 mb-8 max-w-lg leading-relaxed">
+                    Rich in potassium, vitamins, and natural sweetness. The banana is not just a fruit; it's a global icon of health and convenience.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#benefits" class="btn-primary">Explore Benefits</a>
+                    <a href="#story" class="px-6 py-3 border border-stone-300 rounded-full font-semibold hover:bg-stone-100 transition-all">Read Story</a>
+                </div>
+            </div>
+            <div class="relative reveal delay-200">
+                <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-banana-200/30 blur-[100px] rounded-full"></div>
+                <img src="hero.png" alt="Premium Banana" class="w-full h-auto drop-shadow-2xl rounded-[3rem] transform hover:scale-105 transition-transform duration-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16 reveal">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Pure Gold for Your Body</h2>
+            <p class="text-stone-500 max-w-2xl mx-auto">More than just great taste, bananas provide essential nutrients that fuel your day and support your long-term health.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Potassium -->
+            <div class="benefit-card reveal">
+                <div class="w-14 h-14 bg-banana-100 flex items-center justify-center rounded-2xl mb-6">
+                    <i data-lucide="zap" class="text-banana-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Heart Health</h3>
+                <p class="text-stone-600 leading-relaxed">High in Potassium, which helps maintain fluid levels and regulates nutrient movement into cells.</p>
+            </div>
+
+            <!-- Vitamin B6 -->
+            <div class="benefit-card reveal delay-100">
+                <div class="w-14 h-14 bg-leaf-100 flex items-center justify-center rounded-2xl mb-6">
+                    <i data-lucide="brain" class="text-leaf-700"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Metabolism Boost</h3>
+                <p class="text-stone-600 leading-relaxed">Loaded with Vitamin B6, essential for brain development and keeping the nervous system healthy.</p>
+            </div>
+
+            <!-- Fiber -->
+            <div class="benefit-card reveal delay-200">
+                <div class="w-14 h-14 bg-amber-100 flex items-center justify-center rounded-2xl mb-6">
+                    <i data-lucide="activity" class="text-amber-700"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Digestive Support</h3>
+                <p class="text-stone-600 leading-relaxed">Contains dietary fiber and resistant starch, supporting gut health and keeping you full longer.</p>
+            </div>
+
+            <!-- Energy -->
+            <div class="benefit-card reveal delay-300">
+                <div class="w-14 h-14 bg-banana-100 flex items-center justify-center rounded-2xl mb-6">
+                    <i data-lucide="battery-charging" class="text-banana-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Instant Energy</h3>
+                <p class="text-stone-600 leading-relaxed">The perfect pre-workout snack, providing quick glucose release for immediate physical performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Story Section -->
+    <section id="story" class="py-24 bg-stone-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 reveal">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="aspect-[3/4] bg-banana-200 rounded-3xl overflow-hidden shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1571771894821-ad9958a35c47?q=80&w=1000&auto=format&fit=crop" alt="Banana Plantation" class="w-full h-full object-cover">
+                            </div>
+                            <div class="aspect-square bg-leaf-800 rounded-3xl p-8 text-white flex flex-col justify-end">
+                                <span class="text-4xl font-bold mb-2">135+</span>
+                                <p class="text-leaf-200 text-sm">Countries cultivating bananas worldwide.</p>
+                            </div>
+                        </div>
+                        <div class="pt-8 space-y-4">
+                            <div class="aspect-square bg-stone-900 rounded-3xl p-8 text-white flex flex-col justify-end">
+                                <span class="text-4xl font-bold mb-2">7000+</span>
+                                <p class="text-stone-400 text-sm">Years of history since domestication in PNG.</p>
+                            </div>
+                            <div class="aspect-[3/4] bg-banana-400 rounded-3xl overflow-hidden shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1528825831138-d73644ce48c9?q=80&w=1000&auto=format&fit=crop" alt="Banana Close-up" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 reveal delay-200">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">From Indomalaya to <span class="italic text-banana-600">Global Staple</span></h2>
+                    <div class="space-y-6 text-stone-600 leading-relaxed">
+                        <p>
+                            Bananas originated in the Indomalayan realm and Australia, first domesticated in Papua New Guinea. Today, they are grown in at least 135 countries, primarily for their fruit.
+                        </p>
+                        <p>
+                            The modern "Cavendish" variety dominates the global market, known for its resilience and sweetness. It's a fruit that transcends borders, providing essential nutrition to billions.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-banana-500 shrink-0"></div>
+                                <span>Botanically considered a large herb, not a tree.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-banana-500 shrink-0"></div>
+                                <span>The fourth most valuable food crop in the developing world.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-banana-500 shrink-0"></div>
+                                <span>Naturally radioactive (but completely safe!) due to Potassium-40.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6 reveal">
+            <div class="bg-stone-900 rounded-[3rem] p-12 md:p-16 text-white text-center relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-banana-400 rounded-full blur-[100px] opacity-20"></div>
+                
+                <h2 class="text-4xl font-bold mb-6">Join the Banana Revolution</h2>
+                <p class="text-stone-400 mb-10 text-lg">Interested in sustainable farming or nutritional partnerships? Let's talk.</p>
+                
+                <form class="space-y-4">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" class="w-full bg-stone-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-banana-400 outline-none">
+                        <input type="email" placeholder="Your Email" class="w-full bg-stone-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-banana-400 outline-none">
+                    </div>
+                    <textarea placeholder="How can we help?" rows="4" class="w-full bg-stone-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-banana-400 outline-none"></textarea>
+                    <button type="submit" class="btn-primary w-full py-4 text-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-stone-200 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2 text-xl font-bold">
+                <span class="text-banana-500">🍌</span>
+                <span>Bananify</span>
+            </div>
+            <p class="text-stone-500 text-sm">© 2026 Bananify. Inspired by Wikipedia facts.</p>
+            <div class="flex gap-6">
+                <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
